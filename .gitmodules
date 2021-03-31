@@ -1,0 +1,3 @@
+[submodule "randomwebsite"]
+	path = randomwebsite
+	url = https://github.com/Mequam/randomwebsite.git
