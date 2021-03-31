@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<title>ClubMeNow - Distance Entry</title>
+	<link rel="icon" href="clubMeNow300x300.png" type="image/png" />
+	<!-- Bootstrap CSS -->
+	<link rel='stylesheet' 
+	href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css' />
+	<!-- ClubMeNow custom CSS -->
+	<link rel='stylesheet' href='clubMeNow.css' />
+	
+</head>
+
+<body>
+
+	<div class='container'>
+		<h1 id="version_header"></h1>
+		<button class="btn btn-dark" id="btnBack">Go Back</button>
+	</div>
+	<!-- ClubMeNow custom JS -->
+	<script src='clubMeNow.js'></script>
+	<script>
+		//display the application version
+		document.getElementById("version_header").innerHTML = 
+			"ClubMeNow version " + CLUB_APP_CURRENT_VERSION;
+		//set up the click event to handle going back
+		document.getElementById("btnBack").onclick = goBack;
+	</script>
+</body>
+
+</html>

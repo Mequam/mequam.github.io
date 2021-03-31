@@ -1,0 +1,14 @@
+.user_disp {
+	display: inline-block;
+	padding: 1em;
+	border: 1px solid gray;
+	margin: 1em;
+}
+.user_img {
+	padding-bottom: .5em;
+	border-bottom: 1px solid gray;
+}
+.jumbotron {
+	border-left: 2em solid gray;
+	padding-left: 1em; 
+}

@@ -1,0 +1,80 @@
+/* --- put your css here --- */ 
+
+/* external css is imported into html using the <link> tag in the <head> section, as shown below.
+
+  <head>
+    <link rel="stylesheet" href="assignment02.css">
+  </head>
+
+*/
+
+/* -- assignment css -- */
+body {
+	background-color: #99C5B5;
+}
+#igottabeme {
+	font-family: Arial,Helvetica,sans-serif;
+}
+.classy {
+	margin-left: 10px;
+}
+div {
+	margin-bottom: 50px;
+}
+/* --- pre-existing css --- */
+.stripey tr:nth-child(even) {
+  background-color: gray;
+}
+.stripey tr:nth-child(odd) {
+  background-color: white;
+}
+.stripey th {
+  color: white;
+  background-color: black;
+}
+.mousey td:hover {
+  background-color: yellow;
+}
+.rightey td {
+  text-align: right;
+}
+span {
+	height: 50px;
+	width: 100px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px; 
+	padding-right: 20px;
+	border: solid blue 5px;
+	background: yellow;
+}
+span.a {
+	display: inline;
+}
+span.b {
+	display: block;
+}
+span.c {
+	display: inline-block;
+}
+img[alt="cat icon"] {
+	position: fixed;
+	top: 75%;
+	left: 90%;
+}
+img[alt="dog icon"] {
+	position: relative;
+	bottom: 149px;
+	right: 50px;
+}
+nav {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	padding: 5px;
+	font-size: 20px;
+	background-color: rgb(0,255,0,.9); 
+}
+input[type="text"].pinkey:focus {
+  background-color: pink;
+}

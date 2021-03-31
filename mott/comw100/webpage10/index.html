@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="transforms.css">
+	<title>CSS Transoforms and Transitions</title>
+</head>
+<body>
+	<h1>CSS Transoforms and Transitions</h1>
+	<table width="800" border="2">
+		<tr>
+			<td><h2>Transform #1</h2></td>
+		</tr>
+		<tr>
+			<td>
+				The image bellow will be transformed in 2 ways. The image will be rotated by 30 degrees and it will be scaled to 60% of the 
+				size in the horizontal direction (~240 px) and up to 40% of the size in the vertical direction (~107 px).
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img id="trans1" src="images/mba.jpg" alt="Macbook Air" width=400px height=267px>
+			</td>
+		</tr>
+		<tr><td><h2>Transform #2</h2></td></tr>
+		<tr>
+			<td>
+			The cell below will transition when the mouse hovers over it displaying the hidden text. 
+			The background color will change from black to white over a period of 1.5 seconds
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="trans2">Amazing Shifting Colors</div> 
+			</td>
+		</tr>
+		<tr><td><h2>Transform #3</h2></td></tr>
+		<tr>	
+			<td>
+				<b>THE IMAGE BELLOW IS A LIE!</b>
+				The actual image is transformed 90 degrees and scaled down by .3x and .4y in addition to having its
+				opacity set to 1. When the mouse hovers over the image it transitions into the larger state, undoes its rotation,
+				and resets its opacity, all over the span of .5 seconds.
+			</td>
+		</tr>
+		<tr><td class="backColor"><img id="trans3" src="images/spookMoon.jpg" alt="spooky moon" width=400 height=300></td></tr>
+		<tr><td><h2>Transform #4</h2></td></tr>
+		<tr>
+			<td>
+				The hidden text below will apear when clicked. The transition is attached to the opacity and scale of the text.
+				when the text is clicked it transitions into a smaller, less opace state. In addition to this the opacity property
+				is slightly increased on mouse hover.
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id="trans4">This is a super secret message from the illuminati</p>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

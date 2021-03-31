@@ -1,0 +1,324 @@
+body 
+{
+	margin:0;
+}
+.container_center 
+{	
+	text-align: center;
+	padding-left: 17em;
+	padding-right: 17em;
+}
+.content 
+{
+	margin: 1em;
+	padding: 4em;
+	color: #FFF;
+	background-color: #0D5C63;
+	border-radius: 40px;
+}
+.content form
+{
+	margin: 1em;
+}
+
+@media only screen and not (min-width: 900px)
+{
+	.content {padding: 1em;}	
+
+}
+.content > h2
+{
+	color: #FFAA63;
+}
+p.story
+{
+	background-color: #44a1a0;
+	padding: 1em;
+	color: #000;
+	border-radius: 20px;
+}
+ul 
+{
+	text-align: left;
+}
+.p1 {
+	color: #000;
+	background-color: rgb(255,96,52);
+}
+.p2
+{
+	color: #000;
+	background-color: rgb(255,102,201)
+}
+.content p 
+{
+	text-align: left;
+}
+label 
+{
+	display: block;
+}
+#countLbl 
+{
+	color: #FF66C9;
+}
+.circle_image
+{
+	transform: scale(.5) rotate(45deg);
+	transition: transform .5s ease-out;
+}
+.circle_image:hover
+{
+	transform: scale(.6)
+}
+
+/*this code is for displaying madLibs and madLib syntax highlighting*/
+div.code, div.mad_lib {
+	text-align: left;
+	background-color: #616163;
+	color: #FFF;
+	border-radius: 2px;
+	padding: 1em;
+}
+div.code em, div.mad_lib em {
+	color: #FFA163;
+	text-decoration: none;
+}
+
+/*this rule is for content creator text inputs*/
+.text_maker
+{
+	display: block;
+	font-size: 120%;
+	margin-left: 12.5%;
+	margin-right:12.5%;
+	width: 75%;
+	height: 15em;
+	border: 2px;
+	border-radius: 2px; 
+}
+/*this is the global site look for buttons*/
+button
+{
+	font-size: 120%;
+	font-weight: bold;
+	color: #FFAA63;
+	padding: .5em;		
+	background-color: #44A1A0;
+	border: 2px solid #616163;
+	border-radius: 10px;
+	
+	transition: transform .1s;	
+}
+button:active
+{
+	transform: scale(.75);
+}
+/*this is for the unique button stored on madLibs.php*/
+#btnTest
+{
+	content-align:center;	
+	display: inline-block;
+	width: 45%;
+	margin-top: .5em;
+	margin-bottom: .5em;
+	margin-left: 0%;
+}
+#btnSubmit
+{
+	display: inline-block;
+	width: 30%;
+	margin-top: .5em;
+	margin-bottom: .5em;
+	margin-left: 0%;
+}
+/*this rule is for indicating an action was taken succesfully*/
+.success, .error
+{
+	font-weight: bold;
+	font-size: 300%;
+	color: #0F0;
+	margin:0;
+	border-radius: 0px;
+	text-align: center;
+}
+.success p, .error p 
+{
+	text-align: center;
+}
+h1.success, h1.error
+{
+	font-size: 350%;
+	background-color: #44A1A0;
+	margin: 0;
+	color: #000;
+}
+.error
+{
+	color: #F00;
+}
+
+.hidder p
+{
+	color: #616163;
+	transition: color 1s ease-in-out;
+}
+.hidder
+{
+	background-color: #616163;	
+}
+.hidder:hover p
+{
+	color: #FFF;
+}
+#btnPlay
+{
+	margin: 1em;	
+}
+.banner 
+{
+	content-align: center;
+	text-align: center;
+}
+.banner h1
+{
+	margin-top: 1em;
+}
+.creator
+{
+	text-align: center;
+}
+.mapp 
+{
+	text-align: center;
+}
+@media only screen and not (min-width: 900px)
+{
+	#Gmap 
+	{
+		width: 300px;
+		height: 255px;
+	}
+	.content img 
+	{
+		transform: scale(.65);
+	}
+	#scientist
+	{
+		transform: scale(.50);
+	}
+
+}
+.spacer
+{
+	padding: 18%;
+}
+.scroll
+{
+	padding-bottom: 250px;
+	background-attachment:	fixed;
+	background-image: url("../img/quillNscroll.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	
+}
+.mad
+{
+	background-image: url("../img/lessmad_cat.jpg");
+	background-repeat: no-repeat;
+	background-align: center;
+	background-height: 235;
+	background-width: 310;
+	background-position: 50% 0%;	
+	background-attachment: fixed;	
+}
+/*
+	mobil browser support for the fixed-position is lacking (found that out the hard way)
+	so the mobil browser needs an increased size, unfortionetly mobil browser support for media
+	queries is iffy, so we query the computer browser for if the screens large
+*/
+#menu 
+{	
+	list-style: none;
+	margin: 0;
+	padding: 0;	
+	border:0;
+	background-color: #0D5C63;
+	width: 100%;
+	font-size: 1.5em;
+	text-align:center;
+	columns: 3;
+}
+#menu li
+{
+	color: #FFAA63;
+	text-decoration: none;
+	transition: border .2s ease-out, opacity .2s ease-out;
+}
+#menu li:hover
+{
+	opacity: .75;
+}
+#menu a
+{
+	text-decoration: none;
+}
+#menu a:hover
+{
+	text-decoration: none;
+}
+#menu li > a
+{
+	color: #FFAA63;
+}
+
+@media only screen and not (max-width: 900px)
+{
+	#menu 
+	{
+		columns: 1;
+	}
+	#menu li:hover
+	{
+		border-top: none;
+	}
+	#menu li
+	{
+		border-top: none;
+		text-align: center;
+		display: inline-block;		
+		margin:0;
+		border:0;
+		padding-right:1em;
+		padding-left:1em;	
+	}
+	/*
+		the second selector here is what allows for two of the bars
+		to change color at the same time and the first bar to have any
+		change at all
+	*/
+	#menu > li:hover, #menu > li:hover+li
+	{	
+		border-left-color: #FFAA63;
+	}
+	#menu > li:active, #menu > li:active+li
+	{
+		transition: border .0s;
+		border-left-color: #44A1A0;	
+	}
+
+	/*this puts the seporator inside of our menu*/
+	#menu li + li 
+	{	
+		border-left: .1em solid black;
+		color: #FFAA63;
+		text-decoration: none;
+		margin-left: -10px; 
+	}
+		
+		.spacer
+		{
+			padding: 10%;
+			margin: 0;
+		}
+}

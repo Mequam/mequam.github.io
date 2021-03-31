@@ -1,0 +1,36 @@
+/*main css included everywhere in the page*/
+/*css variables defined across the entire page*/
+:root {
+ --main-emphasis-color: #8783D1;
+}
+.text-danger {
+	color: #F17E8D !important; 
+}
+.login_btn {
+	color: white;
+	background-color = rgb(0,0,0,0);
+}
+.login_btn:hover {
+	background-color: #0E79B2;
+	color: white;
+}
+h1,h2,h3 {
+color: var(--main-emphasis-color);
+}
+.block-link {	
+	display: inline-block;
+	text-align: center;	
+	font-size: 150%;
+	color: white;
+	background-color: rgba(0,0,0,.5);	
+	transition: background-color .25s ease-out;
+}
+
+.block-link:hover {
+	color: white;
+	text-decoration: none;
+	background-color: rgba(0,0,0,.9);
+}
+body {
+	background-color: black;
+}

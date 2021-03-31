@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>comc-151</title>
+		<link rel='stylesheet' type='text/css' href='../css/main.css'>
+	</head>
+	<body>
+		<div class='head'>
+			<h1>David Kennamer</h1>
+			<ul class="contact">
+				<li>414 Poplar St.</li>
+				<li><a href="tel:+8103330269">810-333-0269</a></li>
+				<li><a href="mailto:dkennamer@protonmail.com">dkennamer@protonmail.com</a></li>
+			</ul>	
+
+		</div>
+		
+		<div class='content'>
+			<h1>COMC-115</h1>
+			<h2>A+ Core Hardware Concepts</h2>	
+			<p>
+				This is a hardware prep class where you learn the basic parts of a computer and how to put them together. The goal of the class is for students to come away with the knowledge that they need in order to debug a computer 
+			</p>
+			
+			<p>
+				This semester students built a bare-bones computer from the ground up, every one who leaves the class can say that they built a computer.
+			</p>
+			
+			<h3 class="listHead">topics include</h3>
+			<ul>
+				<li>RAM</li>
+				<li>SSD and HDD</li>
+				<li>basic audio</li>
+				<li>power supplies</li>
+				<li>cmos</li>
+				<li>bios</li>
+				<li>display screens</li>
+				<li>cpus</li>
+				<li>motherboards</li>
+				<li>troubleshooting</li>
+				<li>port connectors</li>
+				<li>expasion card intsallation</li>
+				<li><em>and much more</em></li>
+			</ul>
+		
+		</div>
+	</body>
+</html>

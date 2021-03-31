@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>comg-153</title>
+		<link rel='stylesheet' type='text/css' href='../css/main.css'>
+	</head>
+	<body>
+		<div class='head'>
+			<h1>David Kennamer</h1>
+			<ul class="contact">
+				<li>414 Poplar St.</li>
+				<li><a href="tel:+8103330269">810-333-0269</a></li>
+				<li><a href="mailto:dkennamer@protonmail.com">dkennamer@protonmail.com</a></li>
+			</ul>	
+
+		</div>
+		
+		<div class='content'>
+			<h1>
+				COMG-153
+			</h1>
+			<h2>Computers, a practical approach</h2>	
+			<p>
+				This is a basic computing class making sure that users have a basic understanding of the microsoft sweet.
+				Students are expecte to follow instructional projects inside of microsoft office programs, above all this class
+				shows an ability to follow instructions.
+			</p>
+
+			<h3 class="listHead">Topics Include</h3>
+			<ul>
+				<li>Microsoft Word</li>
+				<li>Excel</li>
+				<li>Power Point</li>
+				<li>Microsoft Access</li>
+				<li>Basic Email</li>
+			</ul>	
+		
+		</div>
+	</body>
+</html>

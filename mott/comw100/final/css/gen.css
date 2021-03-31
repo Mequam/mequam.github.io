@@ -1,0 +1,260 @@
+#charList p
+{
+	word-break: break-all;
+}
+textarea
+{
+	text-align: left;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+form 
+{	
+	padding-right: 1px;
+}
+body 
+{
+	font-size: 100%;
+}
+div
+{
+	margin-top: 0px;	
+}
+button.statBtn
+{
+	display: block;
+	width: 100%;
+	padding-bottom: 0px;
+}
+h2
+{
+	margin-top: 0px;
+}
+ul#stats
+{	
+	font-size: 80%;	
+	text-align: left;
+	content-align: center;	
+	padding: none;
+	grid-area: stats;
+}
+ul#stats li h4
+{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-left: .5em;
+	margin-right: .5em;
+}
+
+#txtNewStat
+{
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	width: 94%;
+}
+ul#stats li
+{	
+	border: 2px solid #E36397;
+	border-bottom: 10px solid #E36397;
+	padding: 0px;	
+	text-align: center;
+}
+ul#stats li + li
+{
+	border-left: 1px solid #E36397;
+}
+ul #stats li p
+{
+	text-align:center;
+}
+ul#stats li#new_stat_ancor
+{
+	display: none;
+}
+#rolls
+{
+	color: #FFF;
+	background-color: #E36397;
+	display: block;
+	border: 0px;
+	margin: .1em;
+	width: 100%;
+	text-align: center;
+	margin-top: .5em;
+}
+
+
+#statUI
+{
+	font-size: 50%;	
+	grid-area: statUI;
+}
+#charIO
+{
+	grid-area: charIO;
+}
+#txtHist
+{
+	grid-area: hist;
+}
+#txtInv
+{
+	grid-area: inv;
+}
+#txtSkill
+{
+	grid-area: skills;
+}
+#divName
+{
+	grid-area: name;
+}
+#divRace
+{
+	grid-area: race;
+}
+#divHp
+{
+	grid-area: hp;
+}
+div.divUI
+{
+	font-size: 50%;
+	text-align: left;
+	padding-left: 1.5em;
+	margin-bottom: .5em;	
+}
+div.divUI input[type="txt"]
+{
+	width: 80%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom-style: dashed;
+	display: block;
+}
+div.divUI input[type="number"]
+{
+	width: 60%;
+	content-align: center;
+	text-align: center;
+}
+label[for="numHp"]
+{
+	display: block;
+}
+label[for="txtHist"]
+{
+	grid-area: labelHist;
+}
+label[for="txtInv"]
+{
+	grid-area: labelInv;
+}
+label[for="txtSkill"]
+{
+	grid-area: lblSkill;
+}
+
+.grid
+{	
+	display: grid;	
+	grid-template-columns: repeat(5,auto);
+	grid-template-rows: repeat(20,auto);
+	grid-template-areas: 	
+	"name name name race race"
+	"stats stats hp hp hp"
+	"stats stats labelHist labelHist labelHist"
+	"stats stats hist hist hist"
+	"stats stats labelInv labelInv labelInv"
+	"stats stats inv inv inv"
+	"stats stats lblSkill lblSkill lblSkill"
+	"stats stats skills skills skills"
+	"stats stats statUI statUI statUI"
+	"charIO charIO charIO charIO charIO";
+
+}
+@media screen and (min-width: 550px)
+{
+	.grid
+	{
+		grid-template-areas: 
+		"name name name race race"
+		"stats stats hp hp hp"
+		"stats stats statUI statUI statUI"
+		"stats stats labelHist labelHist labelHist"
+		"stats stats hist hist hist"
+		"stats stats labelInv labelInv labelInv"
+		"stats stats inv inv inv"
+		"stats stats lblSkill lblSkill lblSkill"
+		"stats stats skills skills skills"
+		"charIO charIO charIO charIO charIO";
+	}
+	#statUI
+	{
+		padding-left: 0px;		
+	}
+
+}
+@media screen and (min-width: 800px)
+{
+	label[for="numHp"]
+	{
+		display: inline;
+	}
+	#txtRace	
+	{
+		display: inline;
+	}
+	#txtName
+	{
+		display: inline;
+	}
+	#statUI
+	{
+		padding-left: 8em;
+		padding-right: 8em;
+		border: none;
+		border-bottom: 2px solid #E36397;	
+	}
+	#statUI input
+	{
+		display: inline;
+		width: 15%;
+	}
+	#rolls
+	{
+		display: inline;
+		width: 5%;
+	}
+	#statUI button
+	{
+		margin-bottom: 1px;	
+	}
+	ul#stats
+	{
+		text-align: center;
+	}
+	ul#stats li
+	{
+		
+		display: inline-block;	
+	}
+	.grid
+	{
+		grid-template-columns: repeat(10,auto);	
+		grid-template-areas:
+			"name name name name race race race race hp hp" 	
+			"stats stats stats stats stats stats stats stats stats stats"
+			"statUI statUI statUI statUI statUI statUI statUI statUI statUI statUI"
+			"labelInv labelInv labelInv labelInv labelInv labelInv labelInv labelInv labelInv labelInv"
+			"inv inv inv inv inv inv inv inv inv inv"
+			"labelHist labelHist labelHist labelHist labelHist labelHist labelHist labelHist labelHist labelHist"
+			"hist hist hist hist hist hist hist hist hist hist"
+			"lblSkill lblSkill lblSkill lblSkill lblSkill lblSkill lblSkill lblSkill lblSkill lblSkill"
+			"skills skills skills skills skills skills skills skills skills skills"
+			"charIO charIO charIO charIO charIO charIO charIO charIO charIO charIO";
+
+	}
+}

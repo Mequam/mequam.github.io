@@ -1,0 +1,126 @@
+textarea 
+{
+	color: #666A86;
+}
+input
+{
+	border-radius: 0px;
+	color: #666A86;
+	display: inline-block;
+	border: 2px solid #E36397;
+}
+@media screen and (min-width: 700px)
+{	
+	body 
+	{
+	  font-size: 130%; 
+	}
+}
+a 
+{
+	text-decoration: none;
+}
+#menu ul
+{
+	
+	columns: 3;
+	margin: 0px;
+	text-align: center;
+	content-align: center;
+	background-color: #E36397;
+}
+#menu a
+{
+	color: #FFF;
+}
+#menu ul li
+{
+	display: block;
+}
+body
+{
+	margin: 0px;
+	text-align: center;	
+}
+ul 
+{
+	list-style: none;
+}
+h1
+{
+	text-align: center;
+	border-bottom: 3px solid #E36397;
+}
+h2 
+{
+	border-bottom: 3px dashed #E36397;
+	margin-bottom: 1em;
+	margin-top: 1em;	
+}
+h1,h2, label 
+{color: #E36397;}
+label
+{
+	font-size: 150%;
+}
+h3 
+{
+padding-left: .1em;
+border-bottom: 2px solid #B2C9AB;}
+h3, h4
+{
+text-align: left;
+padding-left: .1em;
+color: #B2C9AB;
+}
+p
+{	
+	color: #666A86;
+	text-align: left;
+	background-color: #99F7A5; 
+	margin-left: 0px;
+	padding: 3px;	
+}
+p:nth-of-type(odd) .keyWord
+{
+	color: #E36397;
+}
+p:nth-of-type(even), li:nth-of-type(even) p
+{
+	background-color: #A09ABC;
+	color: #FFF;
+}
+p:nth-of-type(even) .keyWord, li:nth-of-type(even) p .keyword
+{
+	color: #99F7A5;
+}
+button
+{
+	background-color: #E36397;
+	text-decoration: none;
+	color: white;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	outline: none;
+	border:none;
+}
+@media screen and (min-width: 900px)
+{
+	#menu ul
+	{
+		columns: 1;
+	}
+	#menu li + li
+	{
+		border-left: 2px solid white;
+		padding-left: .2em;
+	}
+#menu ul li
+{
+	display: inline-block;
+}
+
+}
+

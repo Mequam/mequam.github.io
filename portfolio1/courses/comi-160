@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>comi-160</title>
+		<link rel='stylesheet' type='text/css' href='../css/main.css'>
+	</head>
+	<body>
+		<div class='head'>
+			<h1>David Kennamer</h1>
+			<ul class="contact">
+				<li>414 Poplar St.</li>
+				<li><a href="tel:+8103330269">810-333-0269</a></li>
+				<li><a href="mailto:dkennamer@protonmail.com">dkennamer@protonmail.com</a></li>
+			</ul>	
+
+		</div>
+		
+		<div class='content'>
+			<h1>COMI-160</h1>
+			<h2>Intro to computer info systems</h2>	
+			<p>
+				This class serves as an introduction to a vast amount of computer science subjects.
+				Giving each of them a just light touch. In the words of the proffesor: <em class="quote">"Just a lick off the ice cream cone."</em> 
+			</p>
+			<p>
+				The class was broken down into several large topics, which each of those topics bieng subdivided into a plethra of more specific
+				topics.
+			</p>	
+			<h3 class="listHead">Topics Include</h3>
+			<ul>
+				<li>Computer networking</li>
+				<li>Computer hardware</li>
+				<li>Computer software</li>
+				<li>Computer privacy</li>
+				<li>Computer security</li>
+			</ul>	
+		</div>
+	</body>
+</html>

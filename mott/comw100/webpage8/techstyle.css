@@ -1,0 +1,30 @@
+@charset "utf-8";
+body {
+	background: #FFF;
+	background: repeat-x right top;
+	background-image:url(./img/bk.png);
+}
+h1 {
+	text-align: center;
+	color: white;
+	font-size: 80px;
+}
+#wrapper {	
+	padding-top: 40px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.BodyContent
+{
+	font-family: "Baskerville", "Palatino Linotype", "Palatino", "Century Schoolbook L", "Times New Roman", "serif";
+	color: #8118A7;	
+	text-align: center;
+	padding-top: 40px;
+}
+.ImageAlign 
+{
+	float:left;
+}

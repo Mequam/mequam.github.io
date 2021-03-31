@@ -1,0 +1,117 @@
+html 
+{
+	background-color: #000c1a;
+	color: #00f9c6;
+}
+em 
+{
+	font-style: normal;
+	color: #FF00AB;
+}
+.story
+{
+	padding-left: 14em;
+	padding-right: 14em;
+}
+.content
+{
+	margin-left: 25%;
+	margin-right: 25%;
+	text-align: center;
+}
+.head 
+{	
+	padding-bottom: 2ex;	
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 10%;
+	text-align: center;
+	border-bottom: 1px solid #FF715B;	
+
+}
+h1
+{
+	color: #FF715B;
+}
+h2 
+{
+color: #0075F2;
+}
+
+a
+{
+	color: #00f9c6;
+}
+ul
+{	
+	list-style-type: none;
+	margin-left:25%;
+	margin-right:25%;	
+	padding-left: 2em;
+	padding-right: 2em;
+	text-align: center;
+}
+ul.contact > li 
+{
+	text-align: left;	
+	font-size: 75%;	
+}
+ul.contact > li > a
+{	
+	padding-left: .2ex;	
+	border-left: .75ex solid #FF715B;
+	border-radius: .25ex; 	
+}
+ul.contact > li > a:hover
+{
+	background-color: #FF715B;
+	color: #000000; 	
+}
+
+h3.listHead 
+{
+	border-left: .5ex solid #FF715B;
+	border-right: .5ex solid #FF715B;
+	margin-right: 25%;
+	margin-left:25%;
+	color: #FF00AB;	
+	background-color: #001833;
+}
+
+/*target any list preciding the list head*/
+h3.listHead + ul
+{
+	text-align: center;
+}
+h3.listHead + ul > li > a, h3.listHead + ul > li > nobr > a
+{
+	text-align: center;
+	border-left: .5ex solid #FF715B;
+	border-right: .5ex solid #FF715B;
+	padding-left: 4%;
+	padding-right: 4%;	
+}
+h3.listHead + ul > li > a:hover, h3.listHead + ul > li > nobr > a:hover 
+{
+	background: #FF715B;
+	color: #000;	
+}
+
+h3.listHead + ol
+{
+	text-align: center;
+	margin-right:3ex;
+}
+h3.listHead + ol > li > a
+{
+	text-align: left;
+	border-left: .5ex solid #FF715B;
+	border-right: .5ex solid #FF715B;
+	padding-left: 5%;
+	padding-right: 5%;	
+}
+h3.listHead + ol > li > a:hover
+{
+	background: #FF715B;
+	color: #000;	
+}

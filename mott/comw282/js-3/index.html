@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition
+      Chapter 3
+      Hands-on Project 3-4
+
+      Author: 
+      Date:   
+
+      Filename: index.htm
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 3-4</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 3-4
+      </h1>
+   </header>
+
+   <article>
+      <div id="results">
+          <ul>
+             <li id="item1"></li>
+             <li id="item2"></li>
+             <li id="item3"></li>
+             <li id="item4"></li>
+             <li id="item5"></li>
+          </ul>
+          <p id="resultsExpl"></p>
+      </div>
+      <form>
+          <fieldset>
+            <label for="toolBox" id="placeLabel">
+              Type the name of a tool, then click Submit:
+            </label>
+            <input type="text" id="toolBox" />
+          </fieldset>
+          <fieldset>
+            <button type="button" id="button">Submit</button>
+          </fieldset>
+      </form>
+   </article>
+<script>
+//initilize the global variables for the script (normaly I would declare them localy, but they are stated to be global)
+var i = 1;
+var lstItem = "";
+function processInput()
+{
+	//only perform operations if i is safe for our list
+	if (i <= 5)
+	{
+		//set up the id of the list item that we want to target
+		lstItem = "item" + i;
+
+		//get the user input element and the target output element
+		var target = document.getElementById(lstItem);
+		var uInput = document.getElementById("toolBox");
+		
+		//set the innerHTML of the output to the user input
+		target.innerHTML = uInput.value;
+		
+		//clear out the user input variable for the next run through
+		uInput.value = "";
+		
+		//this is here because 5 is the last tool that the user can submit
+		if (i == 5)
+		{
+			//thank them for their time when they finish
+			var msg_ele = document.getElementById("resultsExpl");
+			msg_ele.innerHTML = "Thanks for your sugestions";
+		}
+		//incriment i for the next run through
+		i -=- 1;
+	}
+}
+
+//make sure that we parse user input when they click the add button
+	var btn = document.getElementById("button");
+	if (btn.addEventListener)
+	{
+		btn.addEventListener("click",processInput,false);
+	}
+	else if (btn.attachEvent)
+	{
+		btn.attachEvent("onclick",processInput);
+	}
+
+</script>
+</body>
+</html>

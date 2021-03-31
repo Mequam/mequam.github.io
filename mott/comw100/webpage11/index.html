@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dnd Character Generator</title>
+		<link rel="stylesheet" type="text/css" href="css/grid.css">
+	</head>
+	<body>
+			<div class="grid">
+			<p id="name">harry potter</p>
+			<p id="race">wizard</p>
+			<p id="hitpoints">10</p>		
+			<ul id="stats">
+				<li><h4>str</h4><p class="roll_output chart">0</p></li>
+				<li><h4>dex</h4><p class="roll_output chart">0</p></li>
+				<li><h4>con</h4><p class="roll_output chart">0</p></li>
+				<li><h4>int</h4><p class="roll_output chart">0</p></li>
+				<li><h4>wis</h4><p class="roll_output chart">0</p></li>
+				<li><h4>cha</h4><p class="roll_output chart">0</p></li>
+			</ul>
+			<div id="history" class="left-container">
+				<h2>History</h2>
+				<textarea class="large-text" id="txtHist" name="txtHist" rows="10" cols="115"></textarea>		
+			</div>
+			<div id="inventory" class="left-container">
+				<h2>Inventory</h2>
+				<textarea class="large-text" id="txtInv" name="txtInv" rows="10" cols="115"></textarea>		
+			</div>
+			<form id="form-panel">
+				<button id="btnReRoll" type="button">Re-Roll</button>
+				<button type="submit">Submit</button>
+			</form>	
+	</div>
+
+	<script src="js/fill_list.js"></script>	
+	<script src="./js/easypiechart.js"></script>
+	<script src="./js/circles.js"></script>		
+</body>
+</html>

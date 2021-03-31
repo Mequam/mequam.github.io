@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>comi-261</title>
+		<link rel='stylesheet' type='text/css' href='../css/main.css'>
+	</head>
+	<body>
+		<div class='head'>
+			<h1>David Kennamer</h1>
+			<ul class="contact">
+				<li>414 Poplar St.</li>
+				<li><a href="tel:+8103330269">810-333-0269</a></li>
+				<li><a href="mailto:dkennamer@protonmail.com">dkennamer@protonmail.com</a></li>
+			</ul>	
+
+		</div>
+		
+		<div class='content'>
+			<h1>
+				COMI-261
+			</h1>
+			<h2>Intro to database systems</h2>	
+			<p>
+				This class offers a look into database administration and allows students to take a glimps at the theory behind
+				creating database tables. Students leaving this course should have the ability to create, administer, and update a sql database.
+			</p>
+
+			<p>
+				Of course each of thes subjects is complex enough that it could easily be divided into many more than we can write here.
+			</p>	
+			<h3 class="listHead">Topics Include</h3>
+			<ul>
+				<li>table normal forms</li>
+				<li>SQL</li>
+				<li>Oracle 11g DBMS</li>
+				<li>relational algebra</li>
+			</ul>	
+		</div>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+@charset "utf-8";
+td {
+	text-align: center;
+}
+
+#trans1 {
+	transform: rotate(30deg) scale(0.6,0.4);
+}
+#trans2 {
+	background-color: #000;
+	font-size: 80pt;
+	transition-property: background-color;
+	transition-duration: 1.5s;
+}
+#trans2:hover{
+	background-color: #FFF;
+}
+
+#trans3{
+	transform: rotate(90deg) scale(.3,.4);
+	opacity: 0;
+	transition: opacity .5s ease-out, transform .5s ease-out;
+}
+#trans3:hover{
+	transform: rotate(0deg) scale(1,1);
+	opacity: 1;
+}
+.backColor {
+	background-image: url("images/spiralColor.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#trans4 {
+	font-size: 40pt;
+	transform: scale(4,2);
+	opacity: 0;	
+	transition: opacity .5s ease-out, transform .5s ease-out;
+}
+#trans4:hover
+{
+	opacity: .1;
+}
+#trans4:active
+{
+	transform: scale(1);
+	opacity: 1;
+}
+

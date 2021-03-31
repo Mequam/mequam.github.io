@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition
+      Chapter 7
+      Hands-on Project 7-3
+
+      Author: 
+      Date:   
+
+      Filename: index.htm
+   -->
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <title>Hands-on Project 7-3</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 7-3
+      </h1>
+   </header>
+
+   <article>
+      <h2>Lunch selections</h2>
+      <form>
+         <input type="checkbox" id="item1" value="7.99" />
+         <label for="item1">Fried chicken ($7.99)</label>
+         <input type="checkbox" id="item2" value="9.99" />
+         <label for="item2">Fried halibut ($9.99)</label>
+         <input type="checkbox" id="item3" value="7.99" />
+         <label for="item3">Hamburger ($7.99)</label>
+         <input type="checkbox" id="item4" value="12.99" />
+         <label for="item4">Grilled salmon ($12.99)</label>
+         <input type="checkbox" id="item5" value="5.99" />
+         <label for="item5">Side salad ($5.99)</label>
+         <input type="button" value="Calculate" id="sButton" />
+      </form>
+      <table>
+         <colgroup>
+            <col class="label" />
+            <col class="amount" />
+         </colgroup>
+         <tbody>
+            <tr>
+               <td>Item total</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td>Tax</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td>Total with tax</td>
+               <td>$0.00</td>
+            </tr>
+         </tbody>
+      </table>
+   </article>
+	<script>
+		function calcTotal()
+		{
+			var itemTotal = 0;
+			var tax = 0;
+			var totalWithTax = 0;
+			//this line works, but it also selectes the button element last, which means if this page ever gets more input elements this code will break
+			var items = document.getElementsByTagName("input");
+			var cells = document.getElementsByTagName("td");
+			
+			//sum up every checked item, this could probably be its own function
+			for (var i = 0; i < 5; i++)
+			{
+				if (items[i].checked)
+				{
+					/*
+						the html for this page stored the prices in values of 100, meaning
+						that they stored the price of the items times 100 in the page, instead of the
+						actual price of the item.
+	
+
+						Im not really sure why that is the case, but I suspect that it has somthing to do with the fact that the 
+						people who wrote the code multiplied the string value by 1, indicating to javascript that it was a number.
+
+						To simplify the code and get around this constraint I changed all of the values stored in the page to their ACTUAL
+						value and told the program to explicitly convert all incoming values into numbers, as I felt that it was more 
+						intuitive than multiplying by 1.
+
+						This way we dont have to worry about converting values back and forth and the code is cleaner.
+					
+					*/
+					itemTotal += (Number(items[i].value));
+				}
+			}
+			
+			tax = itemTotal * 0.05;
+			totalWithTax = itemTotal + tax;
+
+			//the html page uses the unfilled cells as spacing
+			cells[1].innerHTML = (itemTotal).toFixed(2);
+			cells[3].innerHTML = (tax).toFixed(2);
+			cells[5].innerHTML = "$" + (totalWithTax).toFixed(2);
+		}
+		
+		//attach the above function (calcTotal) to the submitButton element 
+		var submitButton = document.getElementById("sButton");
+		if (submitButton.addEventListener)
+		{
+			submitButton.addEventListener("click",calcTotal,false);
+		}
+		else if (submitButton.attachEvent)
+		{
+			submitButton.attachEvent("onclick",calcTotal);
+		}
+		
+		
+		//start custom code
+		
+		//I thought it would be a fun challenge to try and update the display on the click event of each checkbox so the following code does just that
+		//when commented out the program will do exactly what the assignemt inteanded for it to do
+	
+		var checkBoxes = document.getElementsByTagName("input");
+
+		for (var i = 0; i < checkBoxes.length; i++)
+		{
+			//make sure that the input that we select is a check box
+			//NOTE: we could have avoided this with a css seletion, but that is not cross platform, this is
+			if (checkBoxes[i].getAttribute("type") == "checkbox")
+			{
+				//this if statement is a simple cross platform way to ensure that we add the event
+				if (checkBoxes[i].addEventListener){
+					checkBoxes[i].addEventListener("click",calcTotal,false);
+				}
+				else if (checkBoxes[i].attachEvent){
+					checkBoxes[i].attachEvent("onclick",calcTotal);
+				}
+			} 
+		}
+			
+	</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>comw-100</title>
+		<link rel='stylesheet' type='text/css' href='../css/main.css'>
+	</head>
+	<body>
+		<div class='head'>
+			<h1>David Kennamer</h1>
+			<ul class="contact">
+				<li>414 Poplar St.</li>
+				<li><a href="tel:+8103330269">810-333-0269</a></li>
+				<li><a href="mailto:dkennamer@protonmail.com">dkennamer@protonmail.com</a></li>
+			</ul>	
+
+		</div>
+		
+		<div class='content'>
+			<h1>COMW-100</h1>
+			<h2>Intro to webpage creation</h2>	
+			<p>
+				This course teaches students basic web technologies. Students leaving the course should have an understanding of html css
+				and javascript.
+			</p>	
+			<p>In addition to this students should have a basic understanding of dynamic html pages.</p>
+			<p>Of course many of these topics could be expanded down into a plethora of other topics that we could not fit in here.</p>
+			<h3 class="listHead">Topics Include</h3>
+			<ul>
+				<li>dynamic images</li>
+				<li>html</li>
+				<li>css</li>
+				<li>linking web pages</li>
+			</ul>
+
+			<h3 class="listHead">Projects Include</h3>
+			<ul>
+				<li><a href="../projects/web/web_proj1.pdf">instructions</a> | <a href="http://esweb.mcc.edu/~dkennamer/comw100/project1/index.php">project 1</a></li>
+				<li><a href="../projects/web/web_proj2.pdf">instructions</a>| <a href="http://esweb.mcc.edu/~dkennamer/comw100/project2/index.php">project 2</a></li>
+			</ul>	
+		</div>
+	</body>
+</html>

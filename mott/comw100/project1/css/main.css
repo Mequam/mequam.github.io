@@ -1,0 +1,13 @@
+#menu li
+{
+	display: inline;
+	border: 1px solid;
+	background-color: rgb(255,170,99);
+}
+.p1 {
+	background-color: rgb(255,96,52);
+}
+.p2
+{
+	background-color: rgb(255,102,201)
+}

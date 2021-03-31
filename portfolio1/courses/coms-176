@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>coms-176</title>
+		<link rel='stylesheet' type='text/css' href='../css/main.css'>
+	</head>
+	<body>
+		<div class='head'>
+			<h1>David Kennamer</h1>
+			<ul class="contact">
+				<li>414 Poplar St.</li>
+				<li><a href="tel:+8103330269">810-333-0269</a></li>
+				<li><a href="mailto:dkennamer@protonmail.com">dkennamer@protonmail.com</a></li>
+			</ul>	
+
+		</div>
+		
+		<div class='content'>
+			<h1>COMS-176</h1>
+			<h2><a href="../sylybi/CShrp.pdf">Intro To .NET Programing</a></h2>	
+			<p>This course teaches students how to program in C# and some basic .net programing fundimentals.</p>	
+			
+			<h3 class="listHead">Topics Include</h3>
+			<ul>
+				<li>variables</li>
+				<li>visual studio</li>
+				<li>visual studio form controls</li>
+				<li>arrays</li>
+				<li>lists</li>
+				<li>structs</li>
+				<li>classes</li>
+				<li>database interface</li>
+			</ul>
+			<h3 class="listHead small">Projects Include</h3>
+			<ul>
+				<li>
+					<a href="../projects/CShrp/CShrp_proj1.pdf">instructions</a> | <a href="../projects/CShrp/CShrp_proj1.zip">project 1</a>
+				</li>
+				<li>
+					<a href="../projects/CShrp/CShrp_proj2.pdf">instructions</a> | <a href="../projects/CShrp/CShrp_proj2.zip">project 2</a>				     </li>
+				<li>
+					<nobr><a href="../projects/CShrp/CShrp_final.pdf">instructions</a> | <a href="../projects/CShrp/CShrp_projFinal.zip">final</a> | <a href="../projects/CShrp/final_writeup.html">responce</a></nobr>
+				</li>
+			</ul>	
+		</div>
+	</body>
+</html>

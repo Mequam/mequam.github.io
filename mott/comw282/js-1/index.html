@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      JavaScript 6th Edition
+      Chapter 1
+      Hands-on Project 1-2
+
+      Author: 
+      Date:   
+
+      Filename: index.htm
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 1-2</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 1-2
+      </h1>
+   </header>
+
+   <article>
+      <h2>High-Speed Internet Plans</h2>
+     
+	<script>
+		//initialize variables for service names and speeds 2 
+		var service1Name ="Basic"; 
+		var service2Name ="Express"; 
+		var service3Name ="Extreme";
+		var service4Name ="Ultimate";
+		var service1Speed = 5;
+		var service2Speed = 25;
+		var service3Speed = 50;
+		var service4Speed = 150;
+	</script>
+      
+	<table id="tblDownSpeeds">
+         <thead>
+            <tr>
+               <th>Service</th>
+               <th>Download Speed (Mbps)</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>
+	<script>
+		document.write(service1Name);
+	</script>	
+               </td>
+               <td>
+	<script>
+		document.write(service1Speed);
+	</script>
+               </td>
+            </tr>
+            <tr>
+               <td>
+	<script>document.write(service2Name);</script>
+               </td>
+               <td>
+	<script>document.write(service2Speed);</script>
+               </td>
+            </tr>
+            <tr>
+               <td>
+	<script>document.write(service3Name);</script>
+               </td>
+               <td>
+	<script>document.write(service3Speed);</script>
+               </td>
+            </tr>
+            <tr>
+               <td>
+	<script>document.write(service4Name);</script>
+               </td>
+               <td>
+	<script>document.write(service4Speed);</script>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+
+     <!--
+      <script>
+		
+		//some custom code to try and do a bit extra for the assignment, will work when uncommented (although it does the same thing as the code above)
+
+		//store the previously declared variable values inside of two parallell arrays
+		 var nameArr = [service1Name,service2Name,service3Name,service4Name]
+		 var speedArr = [service1Speed,service2Speed,service3Speed,service4Speed]
+		
+		var tblSpeed = document.getElementById("tblDownSpeeds"); //locate the table we want to mess with
+
+		//place our custom script after the table to ensure that it loads afterwords
+		for (var i = 1; i < tblSpeed.rows.length; i++) //make sure not to touch the title row, so we start at one
+		{
+			//set the value of the two cells
+			tblSpeed.rows[i].cells[0].innerHTML = nameArr[i-1]; //need to use minus one because we dont want to skip the first value of the data arrays
+			tblSpeed.rows[i].cells[1].innerHTML = speedArr[i-1];//unlike the first value of the rows
+		}
+		
+     </script>
+     --!>
+   </article>
+</body>
+</html>
