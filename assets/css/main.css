@@ -11,8 +11,21 @@
 	background-color: var(--secondary-background);
 }
 h3 {
-	margin: 0;	
+	margin: 0;
+	font-size: 23px;	
 }
+h4 {
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 11px;
+	border-top: 2px dotted var(--secondary-background);
+}
+h3 + h4 {
+	border-top: none;
+	padding-top: 0px;
+}
+
 .container {
 	display: inline-block;	
 }
