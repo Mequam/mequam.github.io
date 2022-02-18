@@ -20,6 +20,10 @@ h4 {
 	margin-right: auto;
 	padding-top: 11px;
 	border-top: 2px dotted var(--secondary-background);
+	margin-bottom: 2px;
+}
+h5 {
+	margin-top: 1px;
 }
 h3 + h4 {
 	border-top: none;
@@ -123,4 +127,38 @@ ul.link_menu {
 .content {
 	display: block;
 	text-align: center;
+}
+
+
+
+.text-container {
+	max-width: 300px;
+	width: 80vw;
+	margin-left:  auto;
+	margin-right: auto;
+	display: block;
+}
+.text-container p {
+	text-align: justify;	
+}
+
+.button {
+	text-transform: uppercase;
+	background-color: var(--primary);
+	color: var(--secondary);
+	display: inline-block;
+	padding: 7px;
+	border-radius: 4px;
+	font-weight: 700;
+	transition: background-color .1s ease-out,
+			color .1s ease-out,
+			font-size .1s ease-in;
+}
+.button:hover {
+	text-decoration: none;
+	background-color: white;
+	color: var(--primary);
+}
+.button:active {
+	font-size: 15px; 
 }
