@@ -1,0 +1,3 @@
+[submodule "pythonAssignments/card/assets/PythonLessons"]
+	path = pythonAssignments/card/assets/PythonLessons
+	url = git@github.com:Mequam/PythonLessons.git
