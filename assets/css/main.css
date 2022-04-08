@@ -1,26 +1,48 @@
 :root {
-	--background: #251F47;
+	--emphasis-background: #002c45;
+	--background: #00202a;/*#251F47;*/
 	--text: #FFFFFF;
-	--primary: #FE5F55;
+	--primary: #00ffaa; /*#FE5F55;*/
 	--secondary: #003351;
-	--terciary: #00A8E8;
+	--terciary: #ff874e; /*#FE5F55;*/
 	--secondary-background: #001820; 
+}
+.emphasis-background {
+	background-color: var(--emphasis-background);
+}
+.tab {
+	position: relative;
+	left: 1em;
 }
 .footer {
 	min-height: 10px;
 	background-color: var(--secondary-background);
+	margin-top: 20px;
 }
 h3 {
 	margin: 0;
-	font-size: 23px;	
+	font-size: 23px;
+	color: var(--primary);
+}
+h3::after {
+	content: "";
+	width: 90%;
+	max-width: 600px;
+	display: block;
+	border-bottom: 2px solid var(--primary);
+	margin-left:auto;
+	margin-right: auto;
+	padding:0;
+	margin-top: 2px;
+	margin-bottom: 20px;
 }
 h4 {
 	max-width: 200px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 11px;
-	border-top: 2px dotted var(--secondary-background);
-	margin-bottom: 2px;
+	border-top: 2px dotted var(--primary);
+	margin-bottom: 8px;
 }
 h5 {
 	margin-top: 1px;
@@ -30,9 +52,6 @@ h3 + h4 {
 	padding-top: 0px;
 }
 
-.container {
-	display: inline-block;	
-}
 ul {
 	margin-bottom: 0px;
 }
@@ -40,6 +59,7 @@ ul {
 	text-align: center;
 	background-color: var(--secondary-background);
 	font-size: 11px;
+	margin-bottom: 27px;
 }
 .header h1 {
 	margin:0px;
@@ -58,6 +78,7 @@ h1.title + p {
 	margin-left: 6px;
 	margin-right: 6px;
 	color: var(--secondary-background);
+	font-weight: 600;
 }
 @media only screen and (max-width: 261px) {	
 	.subheader p, .subheader a {
@@ -74,8 +95,11 @@ h1 {
 	color: var(--primary);
 }
 a {
-	color: var(--primary);
+	color: var(--terciary);
 	text-decoration: none;
+	border-right: 1px;
+	border-left: 1px;
+	display: inline-block;
 }
 a:hover {
 	text-decoration: underline;
@@ -88,7 +112,7 @@ overflow-x: hidden !important;
 body {
 	overflow-x:hidden !important;
 	width: auto !important;
-	background-color: var(--secondary);
+	background-color: var(--background);
 	color: var(--text);
 	font-family: Arial, sans-serif;
 	margin: 0;
@@ -99,11 +123,7 @@ body {
 	text-align: center;
 	width: 100%;
 	height: 100%;
-	background-color: var(--secondary);
-}
-.container + .container::before {
-	content: "-----";
-	color: var(--primary);
+	display: inline-block;		
 }
 ul {
 	list-style-type: none;
@@ -118,34 +138,62 @@ ul li + li {
 	margin-top: 0;
 }
 ul.link_menu {
-	border: 1px dotted var(--primary);
+	border: 1px dotted var(--terciary);
+	background-color: var(--secondary-background);
 	width: 100%;
 	max-width: 190px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 6px;
+	padding-right: 6px;
 }
 .content {
 	display: block;
 	text-align: center;
+	background-color: var(--background);
 }
 
 
 
-.text-container {
-	max-width: 300px;
-	width: 80vw;
+/*.text-container,*/
+.content p {
+	max-width: 400px;
+	width: 84%;
+	margin:0;
 	margin-left:  auto;
 	margin-right: auto;
 	display: block;
+	background-color: var(--secondary-background);
+	padding: 17px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	text-align: justify;	
+}
+.content p + p {
+	padding-top: 0;
 }
 .text-container p {
 	text-align: justify;	
 }
+.group {
+	background-color: var(--secondary-background);
+	padding-top: 12px;
+	padding-bottom: 12px;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media only screen and (max-width:527px) {
+	.group {
+		max-width: 90%;
+	}
+
+}
 
 .button {
 	text-transform: uppercase;
-	background-color: var(--primary);
-	color: var(--secondary);
+	background-color: var(--terciary);
+	color: var(--secondary-background);
 	display: inline-block;
 	padding: 7px;
 	border-radius: 4px;
@@ -153,12 +201,53 @@ ul.link_menu {
 	transition: background-color .1s ease-out,
 			color .1s ease-out,
 			font-size .1s ease-in;
+	border: 2px solid var(--terciary);
 }
 .button:hover {
 	text-decoration: none;
-	background-color: white;
-	color: var(--primary);
+	background-color: var(--secondary-background);	
+	color: var(--terciary);
 }
 .button:active {
 	font-size: 15px; 
 }
+/*
+	this is not inteanded to hide text!
+	only indicate to the user that the BACK END
+	is hiding text from them
+	
+	DO NOT USE THIS TO HIDE IMPORTANT INFORMATION THAT WOULD BE DUMB
+*/
+ol li {
+	text-align: left;
+}
+em,.em,.aggressive,p.aggressive {	
+	text-decoration: none;
+	display: inline-block;
+	font-style: normal;
+	border-left: 2px solid var(--terciary);	
+	display: inline-block;
+	padding-left: 3px;
+	background-color: var(--emphasis-background);
+}
+.aggressive,p.aggressive {
+	font-size: 24px;
+	font-weight: 900;
+	border-right: 5px solid var(--terciary);
+	border-left: 5px solid var(--terciary);
+	border-top: 2px dotted var(--terciary);
+	border-bottom: 2px dotted var(--terciary);
+	color: var(--primary);
+}
+p.aggressive {
+	text-align: center;
+}
+p.hidden,.hidden {
+	color: black;
+	background-color: black;
+	border: none;
+}
+p.hidden::selection,.hidden {
+	background: rgb(1,0,0);
+}
+

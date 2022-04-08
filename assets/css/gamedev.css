@@ -1,0 +1,35 @@
+#game-theme {
+	margin-left: auto;
+	margin-right: auto;	
+	max-width: 300px;
+}
+em {
+	text-decoration: none;
+}
+ol em {
+	background-color: var(--secondary-background);
+}
+ol {
+	width: 84%;
+	white-space: nowrap;
+	padding-left: 17px;
+	max-width: 400px;
+	margin:0;
+	margin-left:  auto;
+	margin-right: auto;
+	display: block;
+	background-color: var(--emphasis-background);
+	padding: 17px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	text-align: justify;	
+}
+ol li {
+	position: relative;
+	left: 17px;
+}
+@media only screen and (max-width: 332px) {
+    .tab-info {
+	font-size: 4.7vw;
+	}
+}
