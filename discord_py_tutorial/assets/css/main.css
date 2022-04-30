@@ -1,0 +1,220 @@
+:root {
+	--back-color: #222D69;
+	--back-color-highlight: #52578C;
+	--accent-color: #FFE95B;
+	--accent-color-highlight: rgba(82,87,140,.56);
+	--python-top-color: #366c9a;
+	--python-bottom-color: #ffcd3d; 
+}
+ul.link-list {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	list-style: none;
+	text-align: center;
+	padding-left: 0;
+	margin-left: 0;
+}
+ul.link-list li {
+	text-align: center;
+}
+a.button, .button-container a {
+	font-size: 25px;
+	text-decoration: none;
+	background-color: var(--python-bottom-color);
+	display: inline-block;
+	padding: 4px;
+	padding-left: 6px;
+	color: black;
+	border-radius: 5px;
+	padding-right: 6px;
+	width: 100%;
+	max-width: 200px;
+	text-align: center;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	transition: background-color .1s ease-out,
+	color .1s ease-out,padding .1s ease-out;
+}
+a.button:hover, .button-container a:hover { 
+	background-color: var(--python-top-color);
+	color: white;
+}
+a.button:active, .button-container a:active { 
+	padding-left: 1px;
+	padding-right: 1px;
+}
+.block-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+ul.card-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	max-width: 810px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.subheader a {
+	color: white;
+}
+ul.card-menu li {
+	display: inline-block;
+}
+p {
+	margin: 5px;
+}
+h3 {
+	font-size: 30px;
+	color: var(--back-color);
+}
+.events-container {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;	
+	padding-bottom: 2px;
+	margin-bottom: 10px;
+}
+.events-container p, .events-container li {
+	text-align: justify;
+}
+.events-container h4 {
+	border-top: 2px dotted black;
+	padding-top: 4px;
+}
+.paralax {
+	position: static;
+}
+.card {
+	min-width: 214px;
+	max-width: 225px;
+	display: inline-block;	
+	margin: 2px;
+	transition: min-width .1s ease-out, max-width .1s ease-out; }
+.card:hover {
+	min-width: 300px;
+	max-width: 300px;
+	position: relative;
+}
+.card:active {
+	min-width: 214px;
+	max-width: 225px;
+}
+.card-container {
+	background-color: var(--python-top-color);
+	border-radius: 2px;
+	color: white;
+	display: block;
+	padding-right: 7px;
+	padding-left: 7px;
+}
+.card p , .card-header h4 {
+	margin: 0;
+}
+.card-footer {
+	padding-bottom: 6px;
+	padding-top: 6px;
+}
+.card-body {
+	background-color: white;	
+	min-height: 50px;
+	width: 100%;
+	border-radius: 16px;
+}
+.card-footer {
+	background-color: var(--python-bottom-color);
+	color: black;
+}
+.card-body {
+	width: 100%;
+	height: 100%;
+	min-width: 100px;
+	min-height: 100px;
+	background-image: url("../images/cards/question.jpeg");	
+	background-size: 100px 100%;
+	background-position: 50%;
+}
+#card-week1 .card-body {
+	background-image: url("../images/cards/basics.jpeg");
+	background-size: cover;
+}
+#card-level2 .card-body {
+	background-image: url("../images/cards/world.jpg");
+	background-size: cover;
+}
+#card-level3 .card-body {
+	background-image: url("../images/cards/megaphone.jpg");
+	background-size: cover;
+}
+body {
+	background-color: var(--back-color);
+	color: white;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+.paralax {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.header .paralax {
+	background-image: url("../images/python_logo.png");
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 0;
+	margin-left: auto;
+	background-size: 100px 100px;
+	margin-right: auto;
+	background-size: 100px 100px;
+	background-position: static;	
+
+}
+.header .logo-container {
+	width: 100px;
+	height: 100px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.header {
+	background-image: url("../images/code_background.jpg");
+	width: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 150px;
+}
+.header h1 {
+	background-color: rgba(82,87,140,.56); 
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.subheader {
+	background-color: rgba(82,87,140,.56);
+	height: 34px;
+}
+.content {
+	background-color: white;
+	display: block;
+	margin:0;
+	padding:0;
+	margin-left: 11px;
+	margin-right: 11px;
+	color: black;
+	padding-top: 3px;
+}
+p {
+	font-weight: 400;
+}
+p.emphasis {
+	font-weight: 800;
+	font-size: 110%;
+	border: 3px dotted var(--python-bottom-color);	
+}
