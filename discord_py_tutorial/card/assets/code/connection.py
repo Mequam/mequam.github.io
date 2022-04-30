@@ -17,5 +17,5 @@ async def on_ready():
 		f'{client.user} is connected to the following guild:\n'
 		f'{guild.name}(id: {guild.id})'
 		)
-TOKEN = 'OTY5OTQ3MjIzODU1MDk5OTA0.Ym0zvg.ZkPCCO0fCwmtqzoPmBrI2mpcVXM'
+TOKEN = os.getenv('DISCORD_TOKEN')
 client.run(TOKEN,bot=True)

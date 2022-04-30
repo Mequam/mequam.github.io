@@ -28,5 +28,5 @@ async def on_message(msg):
 			for channel in guild.text_channels:
 				await channel.send(msg.content)
 				
-TOKEN = 'OTY5OTQ3MjIzODU1MDk5OTA0.Ym0zvg.ZkPCCO0fCwmtqzoPmBrI2mpcVXM'
+TOKEN = os.getenv('DISCORD_TOKEN')
 client.run(TOKEN,bot=True)

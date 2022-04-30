@@ -39,7 +39,7 @@ async def on_ready():
 
 
 #run the bot the same as we have been
-TOKEN = 'OTY5OTQ3MjIzODU1MDk5OTA0.Ym0zvg.ZkPCCO0fCwmtqzoPmBrI2mpcVXM'
+TOKEN = os.getenv('DISCORD_TOKEN')
 
 print('[*] attempting connection...')
 client.run(TOKEN,bot=True)

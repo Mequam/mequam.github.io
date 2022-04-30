@@ -24,5 +24,5 @@ async def on_message(msg):
 	if msg.author != client.user:
 		print('[{0}] {1}'.format(msg.author,msg.content))
 
-TOKEN = 'OTY5OTQ3MjIzODU1MDk5OTA0.Ym0zvg.ZkPCCO0fCwmtqzoPmBrI2mpcVXM'
+TOKEN = os.getenv('DISCORD_TOKEN')
 client.run(TOKEN,bot=True)
