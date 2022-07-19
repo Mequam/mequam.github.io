@@ -1,0 +1,46 @@
+{"Lyian":{
+	"name":"Lydian",
+	"brightness":"0",
+	"feel":"aggressivly bright",
+	"alternativeName":"",
+	"resolutionNote":"F"},
+"Ionian":{ 
+	"name":"Ionian",
+	"brightness":"1",
+	"feel":"aggressivly bright",
+	"alternativeName":"Major Scale",
+	"resolutionNote":"C"},
+"Mixolydian":{ 
+	"name":"Mixolydian",
+	"brightness":"2",
+	"feel":"rock style",
+	"alternativeName":"",
+	"resolutionNote":"G"
+},
+"Dorian":{
+	"name":"Dorian",
+	"brightness":"3",
+	"feel":"just a tad brighter than minor",
+	"alternativeName":"",
+	"resolutionNote":"D"},
+"Aeolian":{
+	"name":"Aeolian",
+	"brightness":"4",
+	"feel":"often described as sad",
+	"alternativeName":"minor scale",
+	"resolutionNote":"A"
+},
+"Phyrgian":{
+	"name":"Phyrigian",
+	"brightness":"5",
+	"feel":"often used in spanish music",
+	"alternativeName":"",
+	"resolutionNote":"E"
+},
+"Locrian":{
+	"name":"Locrian",
+	"brightness":"6",
+	"feel":"dissonance, dissonance everywhere",
+	"alternativeName":"",
+	"resolutionNote":"B"
+}}
