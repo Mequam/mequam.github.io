@@ -1,0 +1,474 @@
+:root {
+	--footer-color: #61759E;
+	--top-header-color: rgb(77,77,77);
+	--header-color: rgb(64,79,108);
+	--background-color: lightblue;
+	--subtle-highlight-color: #678095;
+	--ui-dot-not-selected: #626D82;
+	--ui-dot-selected: white;
+	--font-color: rgb(20,20,20);
+
+}
+
+body {
+	background-color: var(--background-color);
+	width:100vw;
+	height:100vh;
+	margin:0;
+	overflow-x: hidden;
+	font-family: Ariel, Helvetica;
+
+	z-index: -50;
+	position: relative;
+}
+p,td {
+	line-height: 25px;
+	font-weight: 0;
+	color: var(--font-color);
+}
+td {
+	line-height: initial;
+}
+
+.container {
+	width: 100vw;
+	height:100vh;
+	background-color: white;
+}
+.important,h1,h2,a {
+	font-family: Ariel,Helvetica;
+	font-weight: 900;
+}
+a {
+	position: relative;
+	z-index: 2;
+}
+h2 {
+	color: var(--header-color);
+}
+
+.mountain-image {
+	background-color: white;
+	border-radius: 100px;
+}
+.seperator * {
+	display: inline-block;
+	margin:0;
+}
+
+.seperator {
+	padding-top: 5px;
+}
+.seperator .mountain-image {
+	width: 40px;
+	height:40px;
+	overflow: hidden;
+	margin-left: 25%;
+	border: 1px solid lightgray;
+}
+
+.link-list li {
+	display: inline-block;
+	margin-right: 10%;
+}
+a {
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: 1px solid var(--header-color);
+	display: inline-block;
+	font-style: italic;
+	font-size: 90%;
+	color: var(--header-color);
+}
+
+
+.important a {
+	color: white;
+	border-bottom: 1px solid white;
+}
+.link-list {
+	width: 50%;
+	max-width: 500px;
+	text-align: left;
+	margin:0;
+	padding-top: 1%;
+	float: right;
+}
+
+
+
+.jumbo-banner {
+	background-image: url("../images/wind.jpeg");
+	height: 100vh;
+	width: 100vw;
+	z-index: -2;
+	position: relative;
+}
+.jumbo-banner .content {
+	width:100%;
+	height:80%;
+	text-align:center;
+}
+
+.jumbo-banner .hover-image {
+	width: 100vw;
+	height: 70vh;
+	position: absolute;
+	top: 30vh;
+}
+.fancy-header-container {
+	text-align:left;
+	width: 65%;
+	margin-left: 20%;
+	margin-right:auto;
+	padding-top: 66px;
+	position:fixed;
+	z-index: 0;
+}
+
+.fancy-header + h2, .fancy-header {
+	text-align: justify;
+	font-size: 700%;
+	margin-bottom: 0;
+	margin-top:0;
+	transform: scale(.9,1.5);
+}
+.fancy-header {
+	color: var(--top-header-color);
+}
+.fancy-header + h2 {
+	color: var(--header-color);
+}
+
+.container + .container .seperator {
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+
+.vertical-title {
+	text-align: justify;
+	justify-content: center;
+	position:relative;
+	bottom:5px;
+}
+.vertical-title p {
+	display: block;
+	color: var(--top-header-color);
+	transform: scale(.9,1.5);
+}
+.vertical-title p + p {
+	color: var(--header-color);
+}
+
+.section-2 {
+	height: 115vh;
+}
+.far-mountain-spot {
+	width:100%;
+	height:91%;
+	background-image: url("../images/far_mountain.jpeg");
+	background-size: 100%;
+	background-size: cover;
+}
+.far-mountain-spot .content h3 + p {
+	margin-left: 10%;
+	margin-right:5%;
+	margin-top:0;
+}
+.far-mountain-spot .content {
+	margin-left: 20%;
+	margin-right:20%;
+	height: 48%;
+}
+p.number-label {
+	line-height: inherit;
+	position:relative;
+	top: 20px;
+	display: inline;
+	margin: 0;
+	font-size: 800%;
+	font-weight: 900;
+	color: var(--subtle-highlight-color);
+}
+.number-label + h3 {
+	display:inline;
+	color: var(--header-color);
+	font-size: 200%;
+	transform: scale(.9,1.5);
+	position:relative;
+	bottom: .39em;
+	right: .7em;
+
+}
+.number-label + h3::before {
+	content: "";
+	width: .8em;
+	height: .8em;
+	background-color: var(--subtle-highlight-color);
+	display: inline-block;
+	position: relative;
+	top: 1em;
+	left: .8em;
+}
+
+.cara {
+	width: 100%;
+	display: block;
+	height: 25vh;
+	background-color: #404F6CDD;
+}
+
+.cara .card img {
+	width: 95%;
+	max-width: 180px;
+}
+.cara .card {
+	width: 100%;
+	text-align: center;
+}
+.cara ul {
+	list-style: none;
+}
+.cara-container {
+	height:52%;
+	display: flex;
+	flex-direction: column-reverse;
+}
+.card-container li {
+display:inline-block;
+}
+
+.card-container {
+	display: flex;
+	padding:0;
+	margin: 0;
+	width: 80%;
+	height: 70%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top: 2%;
+	justify-content: center;
+}
+
+.dot-selector {
+	width: 100%;
+	height: 0;
+	padding:0;
+	margin: 0;
+	text-align:center;
+}
+.dot-selector li {
+	content: " ";
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	background-color: var(--ui-dot-not-selected);
+	border-radius: 100px;
+}
+
+.dot-selector li.selected {
+	background-color: var(--ui-dot-selected);
+}
+
+.climb-seperator {
+	display: block;
+	width: 100vw;
+	background-color: white;
+}
+.climb-seperator .content {
+	position: relative;
+	bottom:17px;
+	text-align: center;
+	width: 100%;
+	height:100%;
+}
+.left {
+	width: 50%;
+	text-align:right;
+	display: inline-block;
+}
+.right {
+	width: 49%;
+	text-align: left;
+	display: inline-block;
+}
+
+
+.climb-seperator {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/*change color on number label in bright box*/
+.climb-seperator .content .number-label,
+.climb-seperator .content .number-label + h3::before {
+	color: var(--subtle-highlight-color);
+	opacity: 60%;
+}
+
+
+.climb-seperator .content .right {
+	width: 39%;
+	margin-right: 10%;
+}
+.climb-seperator .content .left {
+	width: 35%;
+}
+
+.climb-seperator .content .right p {
+	position: relative;
+	bottom: 20px;
+}
+
+ul.tab-control {
+	list-style: none;
+	width: 100%;
+	background-color: var(--header-color);
+	margin:0;
+	display: flex;
+	padding: 0;
+	padding-left: 5%;
+	height: 7vh;
+}
+ul.tab-control li,  ul.tab-control li a{
+	display: inline-block;
+}
+ul.tab-control li {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+ul.tab-control li p {
+	margin: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 2.05vh;
+}
+ul.tab-control li * {
+	color: lightgray;
+	font-weight: 900;
+	font-size: 120%;
+	line-height: inherit;
+	transform: scale(0.9,1.5);
+}
+ul.tab-control li.tab-focus {
+	background-color: lightgray;
+	color: var(--header-color);
+	text-decoration: underline;
+}
+
+ul.tab-control li.tab-focus * {
+	color: var(--header-color);
+}
+
+.tab-content-container {
+	width: 100vw;
+	height:87vh;
+}
+
+.tab-content-container div {
+	width: 100%;
+	height: 100%;
+}
+
+.schedule-content {
+	background-image: url("../images/birdMountain.jpeg");
+   background-position: center bottom;
+}
+
+
+div.schedule-box {
+    background-color: rgba(255,255,255,0.5);
+    width: auto;
+    height: 200px;
+    padding: 5px;
+    max-width: 294px;
+    /* text-align: center; */
+    padding-left: 30px;
+	 position: relative;
+	 left: 20%;
+	 top:20%;
+}
+div.schedule-box td {
+	padding-right: 50px;
+}
+div.schedule-box td + td {
+	padding-right: 0;
+}
+div.schedule-box table tr:nth-child(n+3) td {
+	padding-top: 20px;
+}
+.tab-content-hidden {
+	display: none;
+}
+
+.footer {
+	width: 100%;
+	height: 11vh;
+	max-height: 200px;
+	background-color: var(--header-color);
+	overflow: hidden;
+}
+.footer * {
+	color: var(--footer-color);
+}
+
+.footer .mountain-image {
+	width: 40px;
+	height: 40px;
+	background-color: var(--footer-color);
+	overflow: hidden;
+	display: inline-block;
+}
+/*
+	neat trick to tint the initial image to match the
+	end colors without having to have a second copy
+*/
+.footer .mountain-image::before {
+	content: " ";
+	width: 40px;
+	height:40px;
+	background-color: var(--footer-color);
+	display: inline-block;
+	position: absolute;
+	border-radius: 100px;
+	opacity: 0.6;
+}
+.footer .vertical-title p {
+	padding: 0;
+	margin: 0;
+	color: var(--footer-color);
+}
+
+.footer .vertical-title {
+	display: inline-block;
+	font-size: 120%;
+	transform: scale(0.9,1.1);
+}
+
+.footer .left, .footer .right {
+	height: 100%;
+}
+.footer .right {
+	width: 43%;
+	height: 67%;
+}
+.footer .left {
+	text-align: left;
+	position: relative;
+	top:19px;
+	padding-left: 10%;
+	width: 44%;
+}
+.footer .right p { 
+	margin: 0;
+	padding: 0;
+}
+.footer {
+	font-weight: 1000;
+}
+.copyright {
+	font-weight: 700;
+	font-size: 90%;
+	font-style: italic;
+}
